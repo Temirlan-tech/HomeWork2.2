@@ -10,11 +10,11 @@ public class Main {
 
     private static Car createObject(String name, double volume) {
         if (name.equals(Subaru.class.getSimpleName())){
-            return new Subaru (name, volume);
+            return new Subaru (name, volume,200.5,"Japan");
         } else if (name.equals(Honda.class.getSimpleName())){
-            return new Honda(name, volume);
+            return new Honda(name, volume,2010,"John");
         } else if (name.equals(Toyota.class.getSimpleName())){
-            return new Toyota(name,volume);
+            return new Toyota(name, "camry", volume,7000);
         } else {
             return new Car() {
                 @Override
